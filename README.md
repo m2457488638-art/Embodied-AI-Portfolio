@@ -186,6 +186,12 @@ XR 双臂遥操作
 
 本页面持续整理个人研究与工程实践成果。
 
+## Repository Structure
+
+[查看 SSDP3 目录骨架](ssdp3/)
+
+`ssdp3/` 保留本地项目的目录层级和文件名，其中 5884 个原始文件均为空占位文件。`checkpoints/.gitkeep` 用于保留空目录。该目录用于展示项目结构，尚未公开具体实现，不包含可运行的训练、部署代码或有效数据。
+
 ---
 
 **维护说明：** [图片与视频素材准备](assets/README.md) · [发布前核对清单](docs/publication-checklist.md)
