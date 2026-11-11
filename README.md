@@ -10,7 +10,7 @@
 
 **项目导航：** [01 / G1 真机模仿学习](#g1) · [02 / SSDP3](#ssdp3) · [03 / Isaac Sim](#isaac-sim) · [技术技能](#skills) · [联系](#contact)
 
-> 当前为本地整理稿，已接入 G1 遥操作与 ACT 自主执行视频、SSDP3 架构图和 Isaac Sim 场景截图。实验设置、指标及视频执行条件仍待核对；发布前请完成[内容核对](docs/publication-checklist.md)。
+> 当前页面为作品集初稿，已接入 G1 遥操作与 ACT 自主执行视频、SSDP3 架构图和 Isaac Sim 场景截图。实验设置、指标及视频执行条件仍待核对，详见[内容核对清单](docs/publication-checklist.md)。
 
 ## Projects at a Glance
 
