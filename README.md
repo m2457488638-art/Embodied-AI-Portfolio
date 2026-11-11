@@ -2,15 +2,15 @@
 
 # Embodied AI & Robot Learning
 
-**Robot Manipulation · Imitation Learning · 3D Diffusion Policy**
+**Robot Manipulation · Imitation Learning · 3D Diffusion Policy · Reinforcement Learning**
 
-围绕机器人操作开展算法研究与工程实践，关注视觉与三维点云条件下的动作策略学习、扩散策略加速，以及真实机器人上的数据采集、训练与部署。
+围绕机器人操作与运动控制开展算法研究及工程实践，关注视觉与三维点云条件下的动作策略学习、扩散策略加速、强化学习运动控制，以及真实机器人上的数据采集、训练与部署。
 
-本作品集集中展示三个项目：Unitree G1 双臂模仿学习、SSDP3 单步三维扩散策略，以及 Isaac Sim 机器人操作场景仿真。
+本作品集集中展示四个项目：Unitree G1 双臂模仿学习、SSDP3 单步三维扩散策略、Go2 搭载机械臂的强化学习运动控制，以及 Isaac Sim 机器人操作场景仿真。
 
-**项目导航：** [01 / G1 真机模仿学习](#g1) · [02 / SSDP3](#ssdp3) · [03 / Isaac Sim](#isaac-sim) · [技术技能](#skills) · [联系](#contact)
+**项目导航：** [01 / G1 真机模仿学习](#g1) · [02 / SSDP3](#ssdp3) · [03 / Go2 + 机械臂 PPO](#go2-ppo) · [04 / Isaac Sim](#isaac-sim) · [技术技能](#skills) · [联系](#contact)
 
-> 当前页面为作品集初稿，已接入 G1 遥操作与 ACT 自主执行视频、SSDP3 架构图和 Isaac Sim 场景截图。实验设置、指标及视频执行条件仍待核对，详见[内容核对清单](docs/publication-checklist.md)。
+> 当前页面为作品集初稿，已接入 G1 遥操作与 ACT 自主执行视频、SSDP3 架构图、Go2 强化学习仿真图片与视频，以及 Isaac Sim 场景截图。实验设置、指标及视频执行条件仍待核对，详见[内容核对清单](docs/publication-checklist.md)。
 
 ## Projects at a Glance
 
@@ -18,6 +18,7 @@
 | --- | --- | --- |
 | **Unitree G1 双臂模仿学习** | 如何将遥操作示范转化为可在机器人上执行的操作策略 | 三视角数据、ACT / DP / DP3、DDS 部署 |
 | **SSDP3 单步三维扩散策略** | 如何减少三维扩散策略的去噪调用次数与预测耗时 | 点云表征、Conditional Mamba U-Net、一致性蒸馏 |
+| **Go2 + 机械臂强化学习运动控制** | 如何在机械臂保持固定姿态时训练四足行走策略 | PPO、稳定行走、给定路径跟踪、仿真验证 |
 | **Isaac Sim 场景仿真** | 如何构建可重复重置、可检查任务判定逻辑的桌面环境 | G1 / Dex1、场景配置、物体随机化、稳定入箱判定 |
 
 ## Research Interests
@@ -26,6 +27,7 @@
 - Imitation Learning：ACT / Diffusion Policy / DP3
 - 3D Point Cloud Representation Learning
 - Diffusion Policy Acceleration
+- Reinforcement Learning & Quadruped Locomotion
 - Sim-to-Real & Robot Deployment
 
 ---
@@ -140,9 +142,41 @@ XR 双臂遥操作
 
 ---
 
+<a id="go2-ppo"></a>
+
+## 03 / Go2 搭载机械臂的强化学习运动控制
+
+**技术栈：** PPO · Isaac Sim · Unitree Go2 · Reinforcement Learning
+
+### 项目介绍
+
+- 基于 Isaac Sim 构建 Go2 搭载机械臂的仿真环境，使用 PPO 训练机械臂保持固定姿态时的四足行走策略。
+- 在仿真中实现搭载机械臂条件下的稳定行走与给定路径跟踪，完成策略训练及行走效果验证。
+
+### Simulation Demo
+
+[![Go2 搭载机械臂的 PPO 仿真运动控制视频封面](assets/go2-arm-ppo-demo.jpg)](assets/go2-arm-ppo-demo.mp4)
+
+[观看 Go2 + 机械臂仿真行走视频 · 60.84 秒](assets/go2-arm-ppo-demo.mp4)
+
+*封面取自视频第 20 秒的仿真画面，视频保持原始内容与时长。*
+
+<details>
+<summary>查看 Go2 + 机械臂 PPO 训练环境截图</summary>
+
+<img src="assets/go2-arm-ppo-sim.png" alt="Go2 搭载机械臂的 PPO 训练环境界面与仿真场景截图">
+
+</details>
+
+**任务设定：** 机械臂保持固定姿态，由 PPO 策略完成四足运动控制。验证范围为 Isaac Sim 仿真中的行走与路径跟踪。
+
+[返回顶部](#top)
+
+---
+
 <a id="isaac-sim"></a>
 
-## 03 / Isaac Sim 机器人操作场景仿真
+## 04 / Isaac Sim 机器人操作场景仿真
 
 **时间：** 2026.07–2026.08  
 **技术栈：** NVIDIA Isaac Sim · Python · Robot Simulation
@@ -172,8 +206,9 @@ XR 双臂遥操作
 | --- | --- |
 | Programming | Python · PyTorch · Linux |
 | Robot Learning | ACT · Diffusion Policy · DP3 |
+| Reinforcement Learning | PPO · Quadruped Locomotion |
 | 3D Vision | RGB-D · Point Cloud · PointNet |
-| Robot Platforms | Unitree G1 / Dex1 · Franka Research 3 |
+| Robot Platforms | Unitree G1 / Dex1 · Unitree Go2 · Franka Research 3 |
 | Simulation | NVIDIA Isaac Sim |
 | Deployment & Data | XR Teleoperate · LeRobot · DDS · Zarr |
 
