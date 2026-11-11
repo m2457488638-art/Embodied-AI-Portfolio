@@ -161,12 +161,9 @@ XR 双臂遥操作
 
 *封面取自视频第 20 秒的仿真画面，视频保持原始内容与时长。*
 
-<details>
-<summary>查看 Go2 + 机械臂 PPO 训练环境截图</summary>
+### 训练环境截图
 
-<img src="assets/go2-arm-ppo-sim.png" alt="Go2 搭载机械臂的 PPO 训练环境界面与仿真场景截图">
-
-</details>
+![Go2 搭载机械臂的 PPO 训练环境界面与仿真场景截图](assets/go2-arm-ppo-sim.png)
 
 **任务设定：** 机械臂保持固定姿态，由 PPO 策略完成四足运动控制。验证范围为 Isaac Sim 仿真中的行走与路径跟踪。
 
