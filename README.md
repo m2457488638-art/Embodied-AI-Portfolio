@@ -116,9 +116,9 @@ ACT、DP 与 DP3 的结果对应表中任务，其中 DP3 使用不同任务，�
 
 [![Unitree G1 与真人乒乓球对打演示视频封面](assets/g1-table-tennis-demo.jpg)](assets/g1-table-tennis-demo.mp4)
 
-[观看 G1 乒乓球对打视频 · 11.63 秒](assets/g1-table-tennis-demo.mp4)
+[观看 G1 乒乓球对打视频 · 11.60 秒](assets/g1-table-tennis-demo.mp4)
 
-*封面取自视频约第 9.31 秒，视频保持原始内容与时长。*
+*封面取自视频约第 9.28 秒，视频保持原始内容与时长。*
 
 **演示设置：** 视频展示机器人使用支撑装置时与真人进行乒乓球对打的片段。
 
