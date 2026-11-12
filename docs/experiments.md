@@ -21,6 +21,12 @@ ACT 和 Diffusion Policy 对应瓶体抓取、搬运与入盒任务；DP3 对应
 
 公开演示：[G1 遥操作](../assets/g1-teleoperation.mp4) · [ACT 自主执行](../assets/g1-policy-demo.mp4)。逐次测试记录未包含在本展示仓库中。
 
+## Unitree G1 全身运动控制与乒乓球对打
+
+负责 Unitree G1 运动控制算法研究，实现机器人全身运动控制，并完成与真人的乒乓球对打演示。
+
+公开材料：[G1 乒乓球对打视频](../assets/g1-table-tennis-demo.mp4)。视频中机器人使用支撑装置。该演示作为独立运动控制项目展示，不计入前述 ACT、DP、DP3 的各 50 次操作任务测试。
+
 ## SSDP3 仿真评估
 
 评估平台为 **RoboTwin 2.0**，覆盖六项双臂仿真任务。

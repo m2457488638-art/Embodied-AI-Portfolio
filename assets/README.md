@@ -10,6 +10,8 @@
 | [g1-policy-demo.mp4](g1-policy-demo.mp4) | G1 ACT 策略自主执行片段 | `飞书20261111-181447.mp4`；8.38 秒，720 × 1280，30 fps |
 | [g1-teleoperation.jpg](g1-teleoperation.jpg) | 遥操作视频封面 | 对应视频第 2 秒的画面，未裁剪 |
 | [g1-policy-demo.jpg](g1-policy-demo.jpg) | 自主执行视频封面 | 对应视频第 2 秒的画面，未裁剪 |
+| [g1-table-tennis-demo.mp4](g1-table-tennis-demo.mp4) | G1 与真人乒乓球对打演示 | 11.63 秒，1280 × 720，30 fps |
+| [g1-table-tennis-demo.jpg](g1-table-tennis-demo.jpg) | G1 乒乓球视频封面 | 对应视频约第 9.31 秒的画面，未裁剪 |
 | [ssdp3-architecture.png](ssdp3-architecture.png) | SSDP3 架构图 | `20261111-181451.png` |
 | [isaac-sim-scene.jpg](isaac-sim-scene.jpg) | Isaac Sim 场景截图 | `20261111-181454.jpg` |
 | [go2-arm-ppo-demo.mp4](go2-arm-ppo-demo.mp4) | Go2 搭载机械臂的 PPO 仿真行走视频 | `飞书20261111-200624.mp4`；60.84 秒，960 × 540，30 fps |
@@ -21,6 +23,7 @@ G1 遥操作视频展示示范采集过程，自主执行视频使用 ACT。视�
 ## 主页展示方式
 
 - G1 视频使用可点击封面和 MP4 文件链接。
+- G1 全身运动控制项目位于模仿学习项目之后，单独展示乒乓球对打视频。
 - SSDP3 架构图和 Isaac Sim 场景截图直接显示在相应项目下。
 - Go2 项目位于桌面 Isaac Sim 场景项目前，使用可点击视频封面，并直接展示训练环境截图。
 - 上传或更新时保持根目录 `README.md` 和本目录的相对层级。

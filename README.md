@@ -2,23 +2,24 @@
 
 # Embodied AI & Robot Learning
 
-**孟亚坤 · 具身智能算法实习 · 机器人操作 / 模仿学习**
+**孟亚坤 · 具身智能算法实习 · 机器人操作 / 运动控制 / 模仿学习**
 
-**Robot Manipulation · Imitation Learning · 3D Diffusion Policy · Reinforcement Learning**
+**Robot Manipulation · Whole-Body Control · Imitation Learning · 3D Diffusion Policy · Reinforcement Learning**
 
 围绕机器人操作与运动控制开展算法研究及工程实践，关注视觉与三维点云条件下的动作策略学习、扩散策略加速、强化学习运动控制，以及真实机器人上的数据采集、训练与部署。
 
-本作品集集中展示四个项目：Unitree G1 双臂模仿学习、SSDP3 单步三维扩散策略、Go2 搭载机械臂的强化学习运动控制，以及 Isaac Sim 机器人操作场景仿真。
+本作品集集中展示五个项目：Unitree G1 双臂模仿学习、Unitree G1 全身运动控制与乒乓球对打、SSDP3 单步三维扩散策略、Go2 搭载机械臂的强化学习运动控制，以及 Isaac Sim 机器人操作场景仿真。
 
-**项目导航：** [01 / G1 真机模仿学习](#g1) · [02 / SSDP3](#ssdp3) · [03 / Go2 + 机械臂 PPO](#go2-ppo) · [04 / Isaac Sim](#isaac-sim) · [技术技能](#skills) · [联系](#contact)
+**项目导航：** [01 / G1 真机模仿学习](#g1) · [02 / G1 全身控制与乒乓球](#g1-whole-body) · [03 / SSDP3](#ssdp3) · [04 / Go2 + 机械臂 PPO](#go2-ppo) · [05 / Isaac Sim](#isaac-sim) · [技术技能](#skills) · [联系](#contact)
 
-**展示内容：** G1 真机遥操作与 ACT 自主执行、SSDP3 算法结构与实验结果、Go2 强化学习仿真行走，以及 Isaac Sim 桌面操作场景。
+**展示内容：** G1 真机遥操作与 ACT 自主执行、G1 全身控制与乒乓球对打演示、SSDP3 算法结构与实验结果、Go2 强化学习仿真行走，以及 Isaac Sim 桌面操作场景。
 
 ## Projects at a Glance
 
 | 项目 | 研究与工程问题 | 展示重点 |
 | --- | --- | --- |
 | **Unitree G1 双臂模仿学习** | 如何将遥操作示范转化为可在机器人上执行的操作策略 | 三视角数据、ACT / DP / DP3、DDS 部署 |
+| **Unitree G1 全身运动控制** | 如何实现全身运动控制与人机乒乓球对打 | 运动控制算法研究、全身控制、乒乓球演示 |
 | **SSDP3 单步三维扩散策略** | 如何减少三维扩散策略的去噪调用次数与预测耗时 | 点云表征、Conditional Mamba U-Net、一致性蒸馏 |
 | **Go2 + 机械臂强化学习运动控制** | 如何在机械臂保持固定姿态时训练四足行走策略 | PPO、稳定行走、给定路径跟踪、仿真验证 |
 | **Isaac Sim 场景仿真** | 如何构建可重复重置、可检查任务判定逻辑的桌面环境 | G1 / Dex1、场景配置、物体随机化、稳定入箱判定 |
@@ -26,6 +27,7 @@
 ## Research Interests
 
 - Robot Learning & Manipulation
+- Humanoid Whole-Body Control
 - Imitation Learning：ACT / Diffusion Policy / DP3
 - 3D Point Cloud Representation Learning
 - Diffusion Policy Acceleration
@@ -99,9 +101,34 @@ ACT、DP 与 DP3 的结果对应表中任务，其中 DP3 使用不同任务，�
 
 ---
 
+<a id="g1-whole-body"></a>
+
+## 02 / Unitree G1 全身运动控制与人机乒乓球对打
+
+**平台：** Unitree G1
+
+### 项目职责与成果
+
+- 负责 Unitree G1 运动控制算法研究，实现机器人全身运动控制。
+- 完成机器人与真人的乒乓球对打演示。
+
+### Demo Preview
+
+[![Unitree G1 与真人乒乓球对打演示视频封面](assets/g1-table-tennis-demo.jpg)](assets/g1-table-tennis-demo.mp4)
+
+[观看 G1 乒乓球对打视频 · 11.63 秒](assets/g1-table-tennis-demo.mp4)
+
+*封面取自视频约第 9.31 秒，视频保持原始内容与时长。*
+
+**演示设置：** 视频展示机器人使用支撑装置时与真人进行乒乓球对打的片段。
+
+[返回顶部](#top)
+
+---
+
 <a id="ssdp3"></a>
 
-## 02 / SSDP3：单步三维扩散策略
+## 03 / SSDP3：单步三维扩散策略
 
 **Single-Step 3D Diffusion Policy**
 
@@ -155,7 +182,7 @@ ACT、DP 与 DP3 的结果对应表中任务，其中 DP3 使用不同任务，�
 
 <a id="go2-ppo"></a>
 
-## 03 / Go2 搭载机械臂的强化学习运动控制
+## 04 / Go2 搭载机械臂的强化学习运动控制
 
 **时间：** 2026.07–2026.08  
 **技术栈：** PPO · Isaac Sim · Unitree Go2 · Reinforcement Learning
@@ -185,7 +212,7 @@ ACT、DP 与 DP3 的结果对应表中任务，其中 DP3 使用不同任务，�
 
 <a id="isaac-sim"></a>
 
-## 04 / Isaac Sim 机器人操作场景仿真
+## 05 / Isaac Sim 机器人操作场景仿真
 
 **时间：** 2026.06–2026.08  
 **技术栈：** NVIDIA Isaac Sim · Python · Robot Simulation
